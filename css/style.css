@@ -1,125 +1,64 @@
+:root {
+    font-size: 62.5%;
+}
 
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-#wrapper{
-    background-color:#fff;
-    padding: 50px;
-    /*max-width: 1000px;
-    margin: auto*/
-}
-/*navbar*/
 
-#navbar{  
-display:flex;
-justify-content:space-between;
-padding:30px;
-overflow: hidden; 
-background-color: #fff;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
 }
 
-.right-nav ul{
-    display:flex;
-    list-style-type:none;
+.container {
+    width: 85%;
+    margin: 0 auto;
 }
 
-.left-nav ul {
-    display:flex;
-    list-style-type:none;
-}
-#navbar a{
-    padding:10px;
-    text-decoration:none;
-    color:hsl(257, 7%, 63%);
-    font-weight: bold;
-    font-size: 13px;
-}
-.left-nav ul .dif{
-    font-size:23px;
-    font-weight: bolder;
-    color:hsl(255, 11%, 22%)
+.page-header {
+    padding: 2rem;
 }
 
-/*Content*/
-#showcase{
-    height:70vh;
-    background-color:#fff;
-    display:flex;
-    position:relative;
-    width:100vw;
-    padding-top: 30px;
-    padding-left:30px;
-    padding-bottom:30px;
-}
-
-#showcase h1{
-    font-size:3.0rem;
-    font-weight: bolder;
-    color:hsl(255, 11%, 22%)
-}
-#showcase .text1{
-    font-size:18px;
-    color:hsl(257, 7%, 63%);
-}
-
-.inner__wrap {
-    height: 100%;
-    width: 100%;
+.navbar {
     display: flex;
-   /* padding-left: 20px;*/
+    justify-content: space-between;
 }
 
-.text__container {
-    width: 90%;
+.navbar ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1.3rem;
 }
 
-.image__contaier{
-    width:10%;
+.navbar a {
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+    transition: .2s;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
 }
 
-.image{
-    width: 100%;
-}
-.overflow1{
-    width:90%;
-    margin:auto;
-    position:absolute;
-    bottom:-20px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.overflow{
-    height:10vh;
-    width:900px;
-    background-color: coral;
+.navbar a:hover {
+    color: #222026;
 }
 
-#section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: cornflowerblue;
+a.logo {
+    color: #222026;
+    font-weight: bold;
 }
 
-.main-box{
- display:flex;
- flex:2;
+.btn {
+    padding: 0 2.3rem;
+    display: block;
 
+    border-radius: 200px;
 }
 
-.box-1{
-background-color:#fff;
-padding:20px;
-position:relative;
+.btn-primary {
+    background: #30D9C8;
+    color: #fff !important;
 }
-
-.image__container2{
-position: absolute;
-top: -20px;
-border-radius: 50%;
-padding: 0.5em;
-background-color: blue;
-}
-

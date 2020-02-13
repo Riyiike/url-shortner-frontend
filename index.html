@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href=./css/style.css>
-    <script src="https://kit.fontawesome.com/d7e2896800.js" crossorigin="anonymous"></script>
-   <link rel ="stylesheet"media="screen and (max-width:760px)"   href="css/mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d7e2896800.js"
+      crossorigin="anonymous"
+    ></script>
     <title>URL SHORTNER</title>
-</head>
-<body>
-    <div id="wrapper">
-        <nav id="navbar">
-            <div class="left-nav">
-                <ul>
-                    <li class="dif">Shortly</li>
-                    <li><a href=>Features</a></li>
-                    <li><a href=>Pricing</a></li>
-                    <li><a href=>Resources</a></li>
-                </ul>
+  </head>
 
-            </div>
-            <div class="right-nav">
-                <ul>
-                    <li><a href=>SignUp</a></li>
-                    <li><a href=>Log in</a></li>
-                   
-                </ul>
-            </div>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navbar">
+          <ul class="left-nav">
+            <li><a href="/" class="logo">Shortly</a></li>
+            <li><a href="/features">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/resources">Resources</a></li>
+          </ul>
+          <!-- .left-nav -->
 
-
+          <ul class="right-nav">
+            <li><a href="/login">Log in</a></li>
+            <li><a href="/signup" class="btn btn-primary">Sign Up</a></li>
+          </ul>
+          <!-- .right-nav -->
         </nav>
-        <div id ="showcase">
-            <div class="inner__wrap">
-                <div class="text__container">
-                    <h1>More than just</br> shorter links</h1>
-                    <p class="text1">Build your brands recognition and get detailed</br>
-                     insights on how your links are performing</p>
+      </div>
+    </header>
+    <!-- .page-header -->
+
+    <main>
+      <section class="showcase">
+        <div class="container">
+          <div class="info">
+            <h1 class="info-heading">More than just shorter links</h1>
+            <p class="info-description">
+              Build your brands recognition and get detailed insights on how
+              your links are performing
+            </p>
+            <button class="btn-started">Get Started</button>
+          </div>
+          <!-- <div class="image__container">
+                <img class="image" src="./images/illustration-working.svg" />
+              </div> -->
+
+          <div class="overflow1">
+            <div class="overflow">
+              <form action="">
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Shorten a link here..."
+                />
+                <input type="submit" value="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="section">
+            <div class="container">
+                <div class="sec-text">
+                    <h2>Advanced Statistics</h2>
+                    <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
+                </div>
+    
+                <div class="main-box">
+                    <div class="box-1">
+                        <h3 class="sub-heading">Brand Recognition</h3>
+                        <p>Boost your brand recognitio with each click
+                            Generic links don't mean a thing. Branded links instil confidence in your content.</p>
+                        <div class="image__container2">
+                            <img class="image2" src="./images/icon-fully-customizable.svg">
+                        </div>
+    
+                    </div>
+                    <div class="box-2">
+                        <h3 class="sub-heading">Detailed Records</h3>
+                        <p>Gain insights into who is clicking your links.
+                            Knowing when and where people engage with your content helps inform better decisions.</p>
+                    </div>
+                    <div class="box-3">
+                        <h3 class="sub-heading">Fully Customizable</h3>
+                        <p>Improve brand awareness and content discoverability through customizable links,
+                            superchanging audience engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="container">
+                <div class="content__container">
+                    <h4>Boost your links today </h4>
                     <button class="btn-started">Get Started</button>
                 </div>
-                <div class="image__container">
-                    <img class="image" src="./images/illustration-working.svg">
-                </div>
             </div>
+        </div> -->
+    </main>
 
-            <div class="overflow1">
-                <div class="overflow">
-                    <form action="">
-                        <input type="text" name="" placeholder="Shorten a link here...">
-                        <input type="submit" value="submit">
-                    </form>
-                    
-                </div>
-            </div>
-           
-        </div>
-
-        <div id="section">
-            <div class="sec-text">
-                <h2>Advanced Statistics</h2>
-                <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
-            </div>
-
-            <div class="main-box">
-                <div class="box-1">
-                    <h3 class="sub-heading">Brand Recognition</h3>
-                    <p>Boost your brand recognitio with each click.</br>
-                    Generic links don't mean a thing. Branded links instil confidence in your content.</p>
-                    <div class="image__container2">
-                        <img class="image2" src="./images/icon-fully-customizable.svg">
-                    </div>
-                    
-                </div>
-                <div class="box-2">
-                    <h3 class="sub-heading">Detailed Records</h3>
-                    <p>Gain insights into who is clicking your links.
-                    Knowing when and where people engage with your content helps inform better decisions.</p>
-                </div>
-                <div class="box-3">
-                    <h3 class="sub-heading">Fully Customizable</h3>
-                    <p>Improve brand awareness and content discoverability through customizable links,
-                    superchanging audience engagement.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="content">
-            <div class="content__container">
-                <h4>Boost your links today </h4>
-                <button class="btn-started">Get Started</button>
-            </div>
-        </div>
-
-        <footer class="main-footer">
+    <!-- <footer class="main-footer">
+        <div class="container">
             <div class="left_text">
                 <h5>Shortly</h5>
             </div>
@@ -124,31 +139,24 @@
                             <li><a href=>Our Team</a></li>
                             <li><a href=>Careers</a></li>
                             <li><a href=>Contact</a></li>
-                                                        
+
                         </ul>
                     </div>
 
                     <div class="social-media">
-                        <a href ="http://facebook.com" target ="blank"><i class="fab
-                        fa-facebook fa-2x"></i></a>
-                        <a href ="http://facebook.com" target ="blank"><i class="fab
-                        fa-instagram fa-2x"></i></a>
-                        <a href ="http://facebook.com" target ="blank"><i class="fab
-                        fa-twitter fa-2x"></i></a>
-                        
+                        <a href="http://facebook.com" target="blank"><i class="fab
+                            fa-facebook fa-2x"></i></a>
+                        <a href="http://facebook.com" target="blank"><i class="fab
+                            fa-instagram fa-2x"></i></a>
+                        <a href="http://facebook.com" target="blank"><i class="fab
+                            fa-twitter fa-2x"></i></a>
+
                     </div>
                 </div>
 
             </div>
+        </div>
 
-        </footer>
-       
-
-
-    </div>
-    
-
-
-
-</body>
+    </footer> -->
+  </body>
 </html>
