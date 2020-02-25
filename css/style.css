@@ -23,7 +23,7 @@ body {
 /*page-header & navbar*/
 
 .page-header {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .navbar {
@@ -33,7 +33,7 @@ body {
 
 .navbar ul li {
   display: inline-block;
-  margin-left: 2rem;
+  /* margin: 2rem; */
   font-size: 1.3rem;
   font-weight: bolder;
 }
@@ -45,6 +45,7 @@ body {
   display: inline-block;
   line-height: 30px;
   height: 30px;
+  margin: 2rem;
 }
 
 .navbar a:hover {
@@ -103,22 +104,26 @@ a.nav-logo {
 
 .url-container {
   position: relative;
-  width: 80%;
-  /*padding: 0 20px;*/
+  top: 100px;
+  padding: 30px;
   margin: auto;
-  bottom: -35px;
+  /*bottom: -35px;*/
   background-color: hsl(257, 27%, 26%);
   background-image: url(../images/bg-shorten-desktop.svg);
-  height: 16vh;
   border-radius: 6px;
 }
 
+.url-form {
+  display: flex;
+  justify-content: space-between;
+}
+
 .url-input {
-  display: inline-block;
   padding: 15px 20px;
   border-radius: 5px;
   border: 0;
   box-sizing: border-box;
+  width: 78%;
 }
 
 .btn-secondary {
@@ -128,6 +133,10 @@ a.nav-logo {
   padding: 15px 20px;
   border-radius: 5px;
   font-size: 1.8rem;
+  width: 20%;
+  color: #fff;
+  font-weight: bolder;
+  background-color: #30d9c8;
 }
 
 /*statistics section*/
@@ -290,4 +299,11 @@ a.nav-logo {
 
 .social-media-logo {
   display: flex;
+}
+
+.byr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2.3rem;
 }
