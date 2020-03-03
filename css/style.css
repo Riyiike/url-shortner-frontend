@@ -73,7 +73,7 @@ a.nav-logo {
 
 .main-content {
   background: url(/images/illustration-working.svg) no-repeat;
-  height: 60vh;
+  /*height: 60vh;*/
   background-position: right 0px;
   background-size: 350px 250px;
   position: relative;
@@ -104,7 +104,7 @@ a.nav-logo {
 
 .url-container {
   position: relative;
-  top: 100px;
+  top: 50px;
   padding: 30px;
   margin: auto;
   /*bottom: -35px;*/
@@ -292,7 +292,7 @@ a.nav-logo {
   text-decoration: none;
 }
 
-.features-link {
+.features-links {
   padding: 0 100px;
 }
 
@@ -304,8 +304,16 @@ a.nav-logo {
   padding-right: 100px;
 }
 
-ul .social-media-list li {
-  display: inline-block;
-  padding: 10px 0;
+.left-footer-links {
+  display: flex;
+}
 
+ul .social-media-logo {
+  display: inline-block;
+}
+
+i {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 50px;
 }
