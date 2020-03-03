@@ -232,25 +232,32 @@ a.nav-logo {
   margin: 20px;
 }
 
-/*border-line*/
-/*.border-line {
-  /* border: 5px solid green;
-  width: 50px;
-}*/
 
 /*boost your link*/
-.boost-your-link h4 {
+.boost-link-heading {
   font-size: 28px;
   font-weight: bolder;
   color: #fff;
-  /*padding: 20px;*/
+  padding: 20px;
   text-align: center;
 }
 
 .boost-your-link {
   background-color: hsl(257, 27%, 26%);
+  background-image: url(../images/bg-boost-desktop.svg);
   align-items: center;
   justify-items: center;
+  padding: 40px 0;
+}
+
+.boost-link-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2.3rem;
+  background: #30d9c8;
+  color: #fff !important;
+  border-radius: 200px;
 }
 
 /*footer*/
@@ -297,13 +304,6 @@ a.nav-logo {
   padding-right: 100px;
 }
 
-.social-media-logo {
-  display: flex;
-}
-
-.byr {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem 2.3rem;
+ul .social-media-list li {
+  display: inline-block;
 }
