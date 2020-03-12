@@ -43,77 +43,61 @@ body {
     color: hsl(255, 11%, 22%)
 }
 
-/*Form*/
-/* .container {
-    height: 500px;
-    max-width: 500px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 5px;
-}
-
-form {
-   margin: 4px;
-    padding: 1.0em;
-    border-radius: 1em;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    text-align: left;
-}
-
-img {
-    border-radius: 50%;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.btn {
-    background-color: rgb(95, 47, 141);
-    color: white;
-    font-size: 0.5;
-    display: inline-block;
-    padding: 8px 12px;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    box-shadow: 0.8px 0.8px 0.8px #888;
-    background-image: linear-gradient(purple yellow purple);
-}
-
-h1 {
+.heading {
+    font-size: 1.9rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8em;
     text-align: center;
 }
 
-#sign-in {
-    align-items: center;
-}
-
-input {
+.input-form {
+    width: 25%;
+    height: 35px;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
     background-color: white;
-
 }
 
 .no-outline:focus {
     outline: none;
 }
 
-.text {
-    font-weight: normal;
+.form-container {
+    text-align: center;
+
+}
+
+.logged-in-checkbox {
+    font-size: 0rem;
+}
+
+.btn {
+    padding: 0 2.3rem;
+    display: block;
+    border-radius: 200px;
+}
+
+.btn-secondary {
+    display: block;
+    border: 0;
+    width: 25%;
+    padding: 0.7rem 2.5rem;
+    border-radius: 5px;
     font-size: 0.8rem;
-    padding-top: 20px;
-} */
+    color: #fff;
+    font-weight: bolder;
+    background-color: #30d9c8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #222026;
+}
