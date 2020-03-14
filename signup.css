@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+}
+
+/*navbar*/
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.right-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.left-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.left-nav ul .dif {
+    font-size: 23px;
+    font-weight: bolder;
+    color: hsl(255, 11%, 22%)
+}
+
+.heading {
+    font-size: 1.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.input-form {
+    width: 25%;
+    height: 35px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: white;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.form-container {
+    text-align: center;
+
+}
+
+.logged-in-checkbox {
+    font-size: 0rem;
+}
+
+.btn {
+    padding: 0 2.3rem;
+    display: block;
+    border-radius: 200px;
+}
+
+.btn-secondary {
+    display: block;
+    border: 0;
+    width: 25%;
+    padding: 0.7rem 2.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #30d9c8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #222026;
+}
