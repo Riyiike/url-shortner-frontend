@@ -34,37 +34,40 @@
     </nav>
 
     <div class="section">
-        <h1 class="heading">Let's get your account set up </h1>
-        <div class="form-container">
-            <form id="form" action="/" method="GET">
-                <div>
-                    <i class="fa fa-user-circle"></i> <label for="name"></label>
-                    <input type="email" class="input-form" id="email" name="email" placeholder="Username">
-                </div>
-                <div>
-                    <i class="fa fa-envelope"></i> <label for="password"></label>
-                    <input type="password" class="input-form" id="password" name="password" placeholder="Email Address"
-                        type="password">
-                </div>
-                <div>
-                    <i class="fa fa-lock"></i> <label for="password"></label>
-                    <input type="password" class="input-form" id="password" name="password"
-                        placeholder="Create Password" type="password">
-                </div>
-                <div>
-                    <i class="fa fa-lock"></i> <label for="password"></label>
-                    <input type="password" class="input-form" id="password" name="password"
-                        placeholder="Confirm Password" type="password">
-                </div>
 
-            </form>
+        <h1 class="heading">Let's get your account set up </h1>
+
+        <form action="/" method="GET">
+
+            <div class="input-icon">
+                <i class="fa fa-user-circle icon"></i>
+                <input type="text" class="input-form" id="username" name="name" placeholder="Username">
+            </div>
+            <div class="input-icon">
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" class="input-form" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-icon">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" class="input-form" id="password" name="password" placeholder="Create Password"
+                    type="password">
+            </div>
+            <div class="input-icon">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" class="input-form" id="password" name="password" placeholder="Confirm Password"
+                    type="password">
+            </div>
             <button type="submit" class="btn btn-secondary"> Sign up </button>
-            <div class="">
+
+            <div class="agreement">
                 <a href="Already have an account">Already have an account?</a>
                 <p class="agreement"> I agree to <a href="Shortly's Terms of Service"> Shortly's Terms of Service.</a>
                 </p>
             </div>
-        </div>
+        </form>
+
+
+
 
     </div>
 

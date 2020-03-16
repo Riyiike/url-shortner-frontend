@@ -43,6 +43,8 @@ body {
     color: hsl(255, 11%, 22%)
 }
 
+/*form*/
+
 .heading {
     font-size: 1.9rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -57,20 +59,25 @@ body {
     border-left-style: hidden;
     border-bottom-style: groove;
     background-color: white;
+    /*margin: 15px;*/
 }
 
 .no-outline:focus {
     outline: none;
 }
 
-.form-container {
+form {
     text-align: center;
 
 }
 
-.logged-in-checkbox {
-    font-size: 0rem;
+.icon {
+    color: #30d9c8;
 }
+
+
+
+/*Styling the button*/
 
 .btn {
     padding: 0 2.3rem;
@@ -81,7 +88,7 @@ body {
 .btn-secondary {
     display: block;
     border: 0;
-    width: 25%;
+    width: 28%;
     padding: 0.7rem 2.5rem;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -91,6 +98,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*Links*/
 
 a {
     text-decoration: none;
