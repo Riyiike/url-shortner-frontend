@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="left-nav">
+            <ul>
+                <li class="dif">Shortly</li>
+                <li><a href=>Features</a></li>
+                <li><a href=>Pricing</a></li>
+                <li><a href=>Resources</a></li>
+            </ul>
+
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><a href=>SignUp</a></li>
+                <li><a href=>Log in</a></li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <section class="sign-up-section">
+
+        <form class="sign-up-form" action="" onsubmit="return SignUp()" method="post">
+
+            <h1 class="heading">Let's get your account set up </h1>
+            <p class="sub-form  alter">Already have an account? <a href="Login.index.html">Log in </a>
+            </p>
+            <div class="social-media-btn">
+                <a href="#" class="btn-login"><i class="fa fa-google"></i> Sign in with Google</a>
+            </div>
+
+            <div class="or-separator">
+                <b>or</b>
+            </div>
+
+            <div class="form-container">
+                <div class="input-container">
+                    <input type="text" class="form-input" id="username" name="username" placeholder="Username">
+                </div>
+            </div>
+
+
+            <div class="form-container">
+                <div class="input-container">
+                    <input type="email" class="form-input" id="email" name="email" placeholder="Email Address">
+                </div>
+
+            </div>
+
+            <div class="form-container">
+                <div class="input-container">
+                    <input type="password" class="form-input" id="password" name="password"
+                        placeholder="Create Password" type="password">
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="input-container">
+                    <input type="password" class="form-input" id="confirm-password" name="password"
+                        placeholder="Confirm Password" type="password">
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn-login"> Sign up </button>
+
+        </form>
+
+        <p class="sub-form alter"> By creating an account,<br> you agree to<a href="Shortly's Terms of Service">
+                Shortly's
+                Terms of Service and Privacy Policy.</a>
+        </p>
+    </section>
+</body>
+
+</html>
