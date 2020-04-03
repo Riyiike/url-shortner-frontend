@@ -1,75 +1,25 @@
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const form = document.getElementById("form")
-const errorElement = document.getElementById("error")
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 
-form.addEventListener("submit", (e) => {
-    let messages = []
-    if (email.value === '' || email.value == null) {
-        messages.push('Email is required')
-    }
+form.addEventListener('submit', e => {
+  e.preventDefault();
 
-    if (password.value.length <= 5) {
-        messages.push("password must be longer than 5 characters")
-    }
+  checkInputs();
+});
 
-    if (password.value.length > 12) {
-        messages.push("password must be less than 12 characters")
-    }
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorElement.innerText = messages.join(', ')
-    }
-})
+function checkInputs() {
+  //get the values from the inputs
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
 
 
-/*
+  if (emailValue === '') {
+    document.querySelector('.errorMsg').textContent = "Nope.. Try again!";
 
-setErrorFor(username, 'Nope,Try again!');
   } else {
-    //add success class
-    setSuccessFor(username);
+    document.querySelector('.errorMsg').textContent = '';
   }
 
-  /*if (emailValue === '') {
-    setErrorFor(email, 'Nope,Try again!');
-  } else {
-    //add success class
-    setSuccessFor(email);
-  }*/
 
-/*function setErrorFor(input, message) {
-  const formContainer = input.parentElement;
-  const errorMsg = formContainer.querySelector('errorMsg');
-
-  //add error message inside errorMsg//
-  errorMsg.innerHtml = 'Nope,Try again!';
-
-  //add error class
-  formContainer.className = 'form-container error';
 }
-
-function setSuccessFor(input) {
-  const formContainer = input.parentElement;
-  formContainer.className = 'form-control success';
-}
-
-let messages = []
-if (email.value === '' || email.value == null) {
-    messages.push('Email is required')
-}
-
-if (password.value.length <= 5) {
-    messages.push("password must be longer than 5 characters")
-}
-
-if (password.value.length > 12) {
-    messages.push("password must be less than 12 characters")
-}
-if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-}
-})
-
-

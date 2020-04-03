@@ -44,7 +44,7 @@ body {
 
 /*Additional style to navbar*/
 #navbar {
-    border-bottom: 1px solid hsl(257, 7%, 63%);
+    border-bottom: 1px solid #D3D3D3;
 }
 
 /*Main Form*/
