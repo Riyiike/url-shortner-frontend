@@ -75,19 +75,6 @@ body {
     color: #e74c3c;
 }
 
-.success .form-input {
-    border-color: #2ecc71;
-}
-
-.error .form-input {
-    border-color: #e74c3c;
-}
-
-.error .errorMsg {
-    color: #e74c3c;
-    visibility: visible;
-}
-
 .sign-up-form {
     padding: 30px;
     background-color: #fff;
