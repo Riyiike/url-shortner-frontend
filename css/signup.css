@@ -82,7 +82,7 @@ body {
 
 .form-input {
     border-radius: 5px;
-    transition: all 0.4s;
+    transition: all 0.5s;
     padding: 10px 16px;
     line-height: 1.3333333;
     display: block;
