@@ -86,7 +86,7 @@ a.nav-logo {
 .info h1.info-heading {
   font-size: 5rem;
   font-weight: bolder;
-  padding-bottom: 0.8px;
+  padding-bottom: 1.8px;
 }
 
 .info .info-description {
@@ -360,11 +360,11 @@ h4.card-title {
   margin-bottom: 25px;
 }
 
-.professional-card > h4 {
+.professional-card>h4 {
   margin-top: 40px;
 }
 
-.professional-card > .price {
+.professional-card>.price {
   color: white;
   margin-top: 20px;
 }
@@ -374,7 +374,7 @@ h4.card-title {
   color: hsl(233, 13%, 49%);
 }
 
-.title > h1 {
+.title>h1 {
   margin-bottom: 10px;
 }
 
@@ -411,11 +411,9 @@ h4.card-title {
 }
 
 .professional-card {
-  background-image: linear-gradient(
-    to bottom right,
-    #30d9c8,
-    rgb(31, 196, 176)
-  );
+  background-image: linear-gradient(to bottom right,
+      #30d9c8,
+      rgb(31, 196, 176));
   color: white;
   height: 108%;
   place-self: center auto;
@@ -460,11 +458,9 @@ h4.card-title {
 }
 
 .btn:hover {
-  background-image: linear-gradient(
-    to right,
-    hsl(0, 0%, 100%),
-    hsl(0, 0%, 100%)
-  );
+  background-image: linear-gradient(to right,
+      hsl(0, 0%, 100%),
+      hsl(0, 0%, 100%));
   color: hsl(237, 63%, 64%);
   border: 1px solid #30d9c8;
   cursor: pointer;
@@ -515,15 +511,15 @@ h4.card-title {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-image: linear-gradient(to right, #30d9c8, rgb(31, 196, 176));
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #30d9c8;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(13px);
 }
 

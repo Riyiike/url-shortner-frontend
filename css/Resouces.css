@@ -67,9 +67,10 @@ a.nav-logo {
 .btn-primary {
   background: #30d9c8;
   color: #fff !important;
+  border: none;
 }
 
-.btn-secondary {
+/*.btn-secondary {
   box-sizing: border-box;
   display: inline-block;
   border: 0;
@@ -80,18 +81,13 @@ a.nav-logo {
   color: #fff;
   font-weight: bolder;
   background-color: #30d9c8;
-}
+}*/
 
-.main-content {
-  background: url(/images/illustration-working.svg) no-repeat;
-  /*height: 60vh;*/
-  background-position: right 0px;
-  background-size: 350px 250px;
-  position: relative;
-}
+
+
 
 .info {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .info-heading {
@@ -157,6 +153,8 @@ a.nav-logo {
 
 .image {
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
 }
 
 /*boost your link*/
@@ -184,6 +182,7 @@ a.nav-logo {
   background: #30d9c8;
   color: #fff !important;
   border-radius: 200px;
+  border: none;
 }
 
 /*footer*/
