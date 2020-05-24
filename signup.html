@@ -12,77 +12,80 @@
 
 <body>
 
-    <nav id="navbar">
-        <div class="left-nav">
-            <ul>
-                <li class="dif">Shortly</li>
-                <li><a href=>Features</a></li>
-                <li><a href=>Pricing</a></li>
-                <li><a href=>Resources</a></li>
-            </ul>
+    <header class="page-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="left-nav">
+                    <li><img src="./images/logo.svg" /></li>
+                    <li><a href="/index.html">Features</a></li>
+                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="/Resources.html">Resources</a></li>
+                </ul>
+                <!-- .left-nav -->
 
+                <ul class="right-nav">
+                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
+                </ul>
+                <!-- .right-nav -->
+            </nav>
         </div>
-        <div class="right-nav">
-            <ul>
-                <li><a href=>Log in</a></li>
-                <li><a href=>SignUp</a></li>
-
-            </ul>
-        </div>
+    </header>
 
 
-    </nav>
+    <div class="container">
+        <section class="sign-up-section">
 
-    <section class="sign-up-section">
+            <form class="sign-up-form" id="form" action="">
 
-        <form class="sign-up-form" id="form" action="">
+                <h1 class="heading">Let's get your account set up </h1>
+                <p class="sub-form  alter">Already have an account? <a href="Login.index.html">Log in </a>
+                </p>
+                <div class="social-media-btn">
+                    <a href="#" class="btn-login"><i class="fa fa-google"></i> Sign in with Google</a>
+                </div>
 
-            <h1 class="heading">Let's get your account set up </h1>
-            <p class="sub-form  alter">Already have an account? <a href="Login.index.html">Log in </a>
+                <div class="or-separator">
+                    <b>or</b>
+                </div>
+
+                <div class="form-container">
+                    <input type="text" class="form-input" id="username" name="username" placeholder="Username">
+                    <p class="errorMsg"></p>
+                </div>
+
+
+                <div class="form-container">
+                    <input type="email" class="form-input" id="email" name="email" placeholder="Email Address">
+                    <p class="errorMsg"></p>
+                </div>
+
+                <div class="form-container">
+
+                    <input type="password" class="form-input" id="password" name="password"
+                        placeholder="Create Password" type="password">
+
+                    <p class="errorMsg"></p>
+                </div>
+
+                <div class="form-container">
+                    <input type="password" class="form-input" id="confirm-password" name="password"
+                        placeholder="Confirm Password" type="password">
+                    <p class="errorMsg"></p>
+                </div>
+
+
+                <button type="submit" class="btn-login"> Sign up </button>
+
+            </form>
+
+            <p class="sub-form alter"> By creating an account,<br> you agree to<a href="Shortly's Terms of Service">
+                    Shortly's
+                    Terms of Service and Privacy Policy.</a>
             </p>
-            <div class="social-media-btn">
-                <a href="#" class="btn-login"><i class="fa fa-google"></i> Sign in with Google</a>
-            </div>
+        </section>
+    </div>
 
-            <div class="or-separator">
-                <b>or</b>
-            </div>
-
-            <div class="form-container">
-                <input type="text" class="form-input" id="username" name="username" placeholder="Username">
-                <p class="errorMsg"></p>
-            </div>
-
-
-            <div class="form-container">
-                <input type="email" class="form-input" id="email" name="email" placeholder="Email Address">
-                <p class="errorMsg"></p>
-            </div>
-
-            <div class="form-container">
-
-                <input type="password" class="form-input" id="password" name="password" placeholder="Create Password"
-                    type="password">
-
-                <p class="errorMsg"></p>
-            </div>
-
-            <div class="form-container">
-                <input type="password" class="form-input" id="confirm-password" name="password"
-                    placeholder="Confirm Password" type="password">
-                <p class="errorMsg"></p>
-            </div>
-
-
-            <button type="submit" class="btn-login"> Sign up </button>
-
-        </form>
-
-        <p class="sub-form alter"> By creating an account,<br> you agree to<a href="Shortly's Terms of Service">
-                Shortly's
-                Terms of Service and Privacy Policy.</a>
-        </p>
-    </section>
 </body>
 <script src="js/signup.js"></script>
 

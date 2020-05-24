@@ -62,6 +62,7 @@ a.nav-logo {
   padding: 0 2.3rem;
   display: block;
   border-radius: 200px;
+  border: none;
 }
 
 .btn-primary {
@@ -258,6 +259,7 @@ a.nav-logo {
   background: #30d9c8;
   color: #fff !important;
   border-radius: 200px;
+  border: none;
 }
 
 /*footer*/
@@ -317,4 +319,4 @@ i {
   color: #fff;
 }
 
-/*STYLING FOR THE SIGN UP PAGE*/
+/*STYLING FOR THE P PAGE*/
