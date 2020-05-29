@@ -7,15 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/d7e2896800.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/d7e2896800.js" crossorigin="anonymous"></script> -->
   <title>URL SHORTNER</title>
 </head>
 
 <body>
   <header class="page-header">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" id= "mynavbar">
         <ul class="left-nav">
           <img src="./images/logo.svg" />
           <li><a href="/index.html">Features</a></li>
@@ -29,8 +30,7 @@
           <li><a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
         </ul>
         <!-- .right-nav -->
-        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <a href="javascript:void(0);" class="icon-" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
@@ -42,6 +42,9 @@
     <div class="main-content">
       <div class="container">
         <div class="info">
+          <div class ="image">
+            <img src ="images/illustration-working.svg" height =350px width=500px>
+          </div>
           <h1 class="info-heading">More than just<br />shorter links</h1>
           <p class="info-description">
             Build your brands recognition and get detailed <br />
