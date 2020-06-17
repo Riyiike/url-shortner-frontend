@@ -56,6 +56,9 @@ a.nav-logo {
   color: #222026;
   font-weight: bold;
 }
+.navbar .icon- {
+  display: none;
+}
 
 /*button*/
 .btn {
@@ -87,11 +90,13 @@ a.nav-logo {
   font-size: 5rem;
   font-weight: bolder;
   padding-bottom: 1.8px;
+  line-height: 50px;
+
 }
 
 .info .info-description {
   color: hsl(257, 7%, 63%);
-  line-height: 25px;
+  line-height: 30px;
   padding-bottom: 20px;
 }
 
@@ -257,11 +262,13 @@ a.nav-logo {
   background: #30d9c8;
   color: #fff !important;
   border-radius: 200px;
+  border:none;
 }
 
 /*footer*/
 .main-footer {
   background-color: hsl(260, 8%, 14%);
+  max-width: 1500px;
 }
 
 .shortly-logo h5 {
@@ -273,13 +280,14 @@ a.nav-logo {
 
 .footer-links {
   display: flex;
+  justify-content: space-around;
   padding: 50px 0;
   line-height: 25px;
   margin-right: 2rem;
 }
 
 .footer-link-heading {
-  padding-bottom: 12px;
+  padding: 12px 0;
   color: #fff;
   font-size: 1.3rem;
   font-weight: bolder;
@@ -307,14 +315,16 @@ a.nav-logo {
   display: flex;
 }
 
-ul .social-media-logo {
-  display: inline-block;
+.social-media-logo {
+  display: flex;
+  flex-direction: row;
 }
 
 i {
   margin-right: 20px;
   color: #fff;
 }
+
 
 /*Styling the Pricing page */
 
@@ -360,21 +370,21 @@ h4.card-title {
   margin-bottom: 25px;
 }
 
-.professional-card>h4 {
+.professional-card > h4 {
   margin-top: 40px;
 }
 
-.professional-card>.price {
+.professional-card > .price {
   color: white;
   margin-top: 20px;
 }
 
 .title {
-  padding: 2rem 0.2rem 0.2rem 0.2rem;
+  padding: 2rem 0.3rem 0.2rem 0.2rem;
   color: hsl(233, 13%, 49%);
 }
 
-.title>h1 {
+.title > h1 {
   margin-bottom: 10px;
 }
 
@@ -411,9 +421,11 @@ h4.card-title {
 }
 
 .professional-card {
-  background-image: linear-gradient(to bottom right,
-      #30d9c8,
-      rgb(31, 196, 176));
+  background-image: linear-gradient(
+    to bottom right,
+    #30d9c8,
+    rgb(31, 196, 176)
+  );
   color: white;
   height: 108%;
   place-self: center auto;
@@ -458,9 +470,11 @@ h4.card-title {
 }
 
 .btn:hover {
-  background-image: linear-gradient(to right,
-      hsl(0, 0%, 100%),
-      hsl(0, 0%, 100%));
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 100%)
+  );
   color: hsl(237, 63%, 64%);
   border: 1px solid #30d9c8;
   cursor: pointer;
@@ -511,15 +525,15 @@ h4.card-title {
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-image: linear-gradient(to right, #30d9c8, rgb(31, 196, 176));
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px #30d9c8;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translateX(13px);
 }
 
@@ -533,7 +547,7 @@ input:checked+.slider:before {
 }
 
 /* ------------ Mobile View: When the screen size is 800px or lower do this: ------------*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   body {
     background-image: url('../images/bg-top.svg');
     background-size: 280px 310px;
@@ -571,4 +585,72 @@ input:checked+.slider:before {
 /*main content*/
 .main-content {
   height: 30vh;
+}
+
+@media screen and (max-width: 700px){
+
+
+  .navbar ul li {
+    display: none;
+  }
+  .navbar a .icon {
+    float: right;
+    display: block;
+  }
+
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    /* text-align: left; */
+  }
+
+  .footer-links {
+    /* display: flex; */
+    flex-direction: column;
+    /* margin-left: auto; */
+    margin-right: 0;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  .left-footer-links {
+    display: block;
+    align-items: center;
+    justify-items: center;
+  }
+  .shortly-logo h5 {
+    display: block;
+    padding-bottom: 2rem;
+    padding-right: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .resources-links .company-links {
+    padding-right: 0;
+    padding-top: 2rem;
+  }
+  
+  .features-links {
+    padding: 0;
+  }
+  
+  .social-media-logo {
+    display: inline-block;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

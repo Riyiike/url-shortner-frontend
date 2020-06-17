@@ -1,0 +1,172 @@
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+.navbar ul li {
+  display: none;
+}
+.navbar a .icon {
+  float: right;
+  display: block;
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+
+.navbar.responsive {
+  position: relative;
+}
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navbar.responsive a {
+  float: none;
+  display: block;
+  /* text-align: left; */
+}
+
+/* MAIN CONTENT OF THE PAGE  */
+.main-content {
+  /* display: block; */
+  background-image: none;
+}
+
+.info-description br {
+content: ' ';
+}
+
+.statistics-paragraph br{
+  content: ' ';
+}
+/* image */
+.image {
+  display: block;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h1.info-heading {
+  font-size: 4rem;
+  padding-top: 1rem;
+}
+
+.info .info-description {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2.3rem;
+  border-radius: 200px;
+  border: none;
+}
+
+/* url form */
+.url-form {
+  display: block;
+}
+
+.url-input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+  border: 0;
+  width: 100%;
+}
+
+.btn-secondary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+}
+
+/* statistics boxes */
+.box p {
+  font-size: 1.1rem;
+  line-height: 15px;
+  text-align: center;
+}
+
+.statistics-info{
+  padding: 2rem 0;
+}
+.statistics-box {
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+}
+  /* align-items: center; */
+  /* justify-content: center; */
+
+.icon {
+  top: -20px;
+  left: 100px;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+.records-box-container {
+  padding-top: 0px;
+}
+
+.customizable-container {
+  padding-top: 0px;
+}
+
+
+.footer-links {
+  /* display: flex; */
+  flex-direction: column;
+  /* margin-left: auto; */
+  margin-right: 0;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.left-footer-links {
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+.shortly-logo h5 {
+  display: block;
+  padding-bottom: 2rem;
+  padding-right: 0px;
+  align-items: center;
+  justify-items: center;
+}
+
+.resources-links .company-links {
+  padding-right: 0;
+  padding-top: 2rem;
+}
+
+.features-links {
+  padding: 0;
+}
+
+.social-media-logo {
+  display: inline-block;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Resources */
+#home-articles .articles-container {
+  grid-template-columns: 1fr;
+}
+

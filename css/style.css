@@ -11,6 +11,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
+
 }
 
 /*page container*/
@@ -29,6 +30,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  width:100%;
 }
 
 .navbar ul li {
@@ -56,6 +58,9 @@ a.nav-logo {
   color: #222026;
   font-weight: bold;
 }
+.navbar .icon- {
+  display: none;
+}
 
 /*button*/
 .btn {
@@ -78,6 +83,7 @@ a.nav-logo {
   background-position: right 0px;
   background-size: 350px 250px;
   position: relative;
+  max-width: 1350px;
 }
 
 .info {
@@ -92,13 +98,17 @@ a.nav-logo {
 
 .info .info-description {
   color: hsl(257, 7%, 63%);
-  line-height: 25px;
+  line-height: 30px;
   padding-bottom: 20px;
 }
 
 .info button {
   font-size: 1.3rem;
   padding: 0.7rem 2.3rem;
+}
+
+.image {
+  display: none;
 }
 
 /*url container*/
@@ -112,6 +122,7 @@ a.nav-logo {
   background-color: hsl(257, 27%, 26%);
   background-image: url(../images/bg-shorten-desktop.svg);
   border-radius: 6px;
+  max-width: 1350px;
 }
 
 .url-form {
@@ -146,6 +157,8 @@ a.nav-logo {
   background-color: aliceblue;
   padding-top: 120px;
   padding-bottom: 80px;
+  line-height: 25px;
+  max-width: 1350px;
 }
 
 .statistics h2 {
@@ -233,7 +246,6 @@ a.nav-logo {
   margin: 20px;
 }
 
-
 /*boost your link*/
 .boost-link-heading {
   font-size: 28px;
@@ -249,6 +261,7 @@ a.nav-logo {
   align-items: center;
   justify-items: center;
   padding: 40px 0;
+  max-width: 1350px;
 }
 
 .boost-link-btn {
@@ -265,6 +278,7 @@ a.nav-logo {
 /*footer*/
 .main-footer {
   background-color: hsl(260, 8%, 14%);
+  max-width: 1500px;
 }
 
 .shortly-logo h5 {
@@ -276,13 +290,14 @@ a.nav-logo {
 
 .footer-links {
   display: flex;
+  justify-content: space-around;
   padding: 50px 0;
   line-height: 25px;
   margin-right: 2rem;
 }
 
 .footer-link-heading {
-  padding-bottom: 12px;
+  padding: 12px 0;
   color: #fff;
   font-size: 1.3rem;
   font-weight: bolder;
@@ -310,13 +325,12 @@ a.nav-logo {
   display: flex;
 }
 
-ul .social-media-logo {
-  display: inline-block;
+.social-media-logo {
+  display: flex;
+  flex-direction: row;
 }
 
 i {
   margin-right: 20px;
   color: #fff;
 }
-
-/*STYLING FOR THE P PAGE*/

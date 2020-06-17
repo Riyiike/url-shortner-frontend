@@ -57,6 +57,11 @@ a.nav-logo {
     font-weight: bold;
 }
 
+.navbar .icon- {
+display: none;
+}
+
+
 
 /*Additional style to navbar*/
 .navbar {
@@ -66,7 +71,7 @@ a.nav-logo {
 /*Main Form*/
 
 .heading {
-    font-size: 1.9rem;
+    font-size: 3.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     padding-bottom: 10px;
@@ -75,8 +80,9 @@ a.nav-logo {
 
 .sign-up-section {
     padding-top: 20px;
-    max-width: 38%;
+    /* max-width: 1200px; */
     margin: auto;
+    position:relative;
     text-align: center;
 }
 
@@ -86,7 +92,7 @@ a.nav-logo {
 
 /*error messages*/
 .errorMsg {
-    font-size: 0.7rem;
+    font-size: 1.4rem;
     text-align: left;
     color: #e74c3c;
 }
@@ -102,6 +108,7 @@ a.nav-logo {
     padding: 10px 16px;
     line-height: 1.3333333;
     display: block;
+    max-width: 400px;
     width: 100%;
     margin: auto;
     height: 40px;
@@ -114,6 +121,9 @@ a.nav-logo {
 .or-separator {
     margin: 50px 0 15px;
     text-align: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
     border-top: 1px solid #e0e0e0;
 }
 
@@ -144,10 +154,11 @@ a.nav-logo {
 .btn-secondary {
     display: block;
     border: 0;
-    width: 28%;
+    max-width: 400px;
+    width: 100%;
     padding: 0.7rem 2.5rem;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 1.6rem;
     color: #fff;
     font-weight: bolder;
     background-color: #30d9c8;
@@ -159,23 +170,36 @@ a.nav-logo {
     text-align: center;
 }
 
-.btn-sm {
+.btn-smF{
     display: inline-block;
-    border-radius: 200px;
-    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
     margin: 1rem 0 0 0;
-    color: #fff;
-    background-color: #30d9c8;
+    color: #3B5998;
 }
-
+.btn-smG {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 1rem 0 0 0;
+    color: #dd4b39;
+}
+.btn-smT {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 1rem 0 0 0;
+    color:#55ACEE;
+}
 .btn-login {
     display: block;
     border: 0;
     width: 100%;
     padding: 0.7rem 2.5rem;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: #fff;
+    max-width: 400px;
     background-color: #30d9c8;
     margin-left: auto;
     margin-right: auto;
@@ -204,9 +228,11 @@ button:hover {
 
 .sub-form {
     display: block;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
 }
 
 .alter {
     padding-bottom: 10px;
 }
+
+
