@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Log in</title>
@@ -14,24 +15,27 @@
 
     <header class="page-header">
         <div class="container">
-            <nav class="navbar">
-                <ul class="left-nav">
-                    <li><img src="./images/logo.svg" /></li>
-                    <li><a href="/index.html">Features</a></li>
-                    <li><a href="/pricing.html">Pricing</a></li>
-                    <li><a href="/Resources.html">Resources</a></li>
-                </ul>
-                <!-- .left-nav -->
-
-                <ul class="right-nav">
-                    <li><a href="/login.html">Login</a></li>
-                    <li><a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
-                </ul>
-                <!-- .right-nav -->
-            </nav>
+          <nav class="navbar" id= "mynavbar">
+            <ul class="left-nav">
+              <img src="./images/logo.svg" />
+              <li><a href="/index.html">Features</a></li>
+              <li><a href="/pricing.html">Pricing</a></li>
+              <li><a href="/Resources.html">Resources</a></li>
+            </ul>
+            <!-- .left-nav -->
+    
+            <ul class="right-nav">
+              <li><a href="/login.html">Login</a></li>
+              <li><a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
+            </ul>
+            <!-- .right-nav -->
+             <a href="javascript:void(0);" class="icon-" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
         </div>
+        
     </header>
-
     <div class="container">
         <section class="sign-up-section">
 
@@ -55,18 +59,18 @@
                 </div>
                 <button type="submit" class="btn btn-login"> Log in</button>
 
-                <div class="or-separator">
+                <p class="or-separator">
                     <b>or</b>
-                </div>
+                </p>
 
                 <div class="sub-form">
                     <p> Log in with:</p>
                 </div>
 
                 <div class="social-media-btn">
-                    <a href="#" class="btn-sm"><i class="fa fa-google"></i> Google</a>
-                    <a href="#" class="btn-sm"><i class="fa fa-facebook"></i> Facebook</a>
-                    <a href="#" class="btn-sm"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a href="#" class="btn-smG"><i class="fa fa-google"></i> Google</a>
+                    <a href="#" class="btn-smF"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="#" class="btn-smT"><i class="fa fa-twitter"></i> Twitter</a>
                 </div>
 
             </form>
@@ -85,4 +89,5 @@
     </div>
 
     <script src="js/login.js"></script>
+    <script src="url.js"></script>
 </body>

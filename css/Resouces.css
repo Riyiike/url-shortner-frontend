@@ -56,6 +56,9 @@ a.nav-logo {
   color: #222026;
   font-weight: bold;
 }
+.navbar .icon- {
+  display: none;
+}
 
 /*button*/
 .btn {
@@ -244,4 +247,13 @@ ul .social-media-logo {
 i {
   margin-right: 20px;
   color: #fff;
+}
+
+
+@media(max-width: 700px) {
+  /* Stack Grid Items */
+
+  #home-articles .articles-container {
+    grid-template-columns: 1fr;
+  }
 }

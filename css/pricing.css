@@ -56,6 +56,9 @@ a.nav-logo {
   color: #222026;
   font-weight: bold;
 }
+.navbar .icon- {
+  display: none;
+}
 
 /*button*/
 .btn {
@@ -537,7 +540,7 @@ input:checked + .slider:before {
 }
 
 /* ------------ Mobile View: When the screen size is 800px or lower do this: ------------*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   body {
     background-image: url('../images/bg-top.svg');
     background-size: 280px 310px;
