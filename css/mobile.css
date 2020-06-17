@@ -3,10 +3,6 @@
 .navbar ul li {
   display: none;
 }
-
-.navbar{
-  border-bottom: none;
-}
 .navbar a .icon {
   float: right;
   display: block;
@@ -34,12 +30,16 @@
   background-image: none;
 }
 
-.info-description{
-  line-break: unset;
+.info-description br {
+content: ' ';
+}
+
+.statistics-paragraph br{
+  content: ' ';
 }
 /* image */
 .image {
-  display: none;
+  display: block;
   overflow: hidden;
   object-fit: cover;
 }
