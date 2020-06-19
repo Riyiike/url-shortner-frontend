@@ -105,137 +105,7 @@ a.nav-logo {
   padding: 0.7rem 2.3rem;
 }
 
-/*url container*/
 
-.url-container {
-  position: relative;
-  top: 50px;
-  padding: 30px;
-  margin: auto;
-  /*bottom: -35px;*/
-  background-color: hsl(257, 27%, 26%);
-  background-image: url(../images/bg-shorten-desktop.svg);
-  border-radius: 6px;
-}
-
-.url-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.url-input {
-  padding: 15px 20px;
-  border-radius: 5px;
-  border: 0;
-  box-sizing: border-box;
-  width: 78%;
-}
-
-.btn-secondary {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 0;
-  padding: 15px 20px;
-  border-radius: 5px;
-  font-size: 1.8rem;
-  width: 20%;
-  color: #fff;
-  font-weight: bolder;
-  background-color: #30d9c8;
-}
-
-/*statistics section*/
-
-.statistics {
-  background-color: aliceblue;
-  padding-top: 120px;
-  padding-bottom: 80px;
-}
-
-.statistics h2 {
-  text-align: center;
-  padding-bottom: 10px;
-  font-size: 2.5rem;
-  font-weight: bolder;
-}
-
-.statistics p.statistics-paragraph {
-  text-align: center;
-  font-size: 1.3rem;
-  color: hsl(0, 0%, 75%);
-}
-
-/*statistics boxes*/
-
-.statistics-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sub-heading {
-  font-weight: bolder;
-  font-size: 1.5rem;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-/* brand,record and customizable boxes*/
-.box {
-  position: relative;
-  justify-content: space-between;
-}
-
-.box p {
-  font-size: 1.1rem;
-  line-height: 15px;
-}
-
-.icon {
-  position: absolute;
-  top: -20px;
-  left: 10px;
-  padding: 10px;
-  background-color: #414478;
-  border-radius: 50%;
-}
-
-/*brand,record and customizable boxes*/
-
-.brand-box {
-  background-color: #fff;
-  width: 250px;
-  padding: 25px;
-  border: 0px solid white;
-  margin: 20px;
-}
-
-/*records-box*/
-
-.records-box-container {
-  padding-top: 50px;
-}
-
-.records-box {
-  background-color: #fff;
-  width: 250px;
-  padding: 25px;
-  border: 0px solid white;
-  margin: 20px;
-}
-
-/*customizable box*/
-.customizable-container {
-  padding-top: 100px;
-}
-
-.customizable-box {
-  background-color: #fff;
-  width: 250px;
-  padding: 25px;
-  border: 0px solid white;
-  margin: 20px;
-}
 
 /*boost your link*/
 .boost-link-heading {
@@ -244,6 +114,7 @@ a.nav-logo {
   color: #fff;
   padding: 20px;
   text-align: center;
+  max-width: 100%;
 }
 
 .boost-your-link {
@@ -262,13 +133,12 @@ a.nav-logo {
   background: #30d9c8;
   color: #fff !important;
   border-radius: 200px;
-  border:none;
+  border: none;
 }
 
 /*footer*/
 .main-footer {
   background-color: hsl(260, 8%, 14%);
-  max-width: 1500px;
 }
 
 .shortly-logo h5 {
@@ -280,17 +150,20 @@ a.nav-logo {
 
 .footer-links {
   display: flex;
-  justify-content: space-around;
   padding: 50px 0;
   line-height: 25px;
   margin-right: 2rem;
 }
 
 .footer-link-heading {
-  padding: 12px 0;
+  padding-bottom: 12px;
   color: #fff;
   font-size: 1.3rem;
   font-weight: bolder;
+}
+
+.footer-links li {
+  list-style: none;
 }
 
 .footer-links a {
@@ -315,16 +188,14 @@ a.nav-logo {
   display: flex;
 }
 
-.social-media-logo {
-  display: flex;
-  flex-direction: row;
+ul .social-media-logo {
+  display: inline-block;
 }
 
 i {
   margin-right: 20px;
   color: #fff;
 }
-
 
 /*Styling the Pricing page */
 
