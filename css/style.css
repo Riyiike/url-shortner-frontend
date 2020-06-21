@@ -58,7 +58,7 @@ a.nav-logo {
   color: #222026;
   font-weight: bold;
 }
-.navbar .icon- {
+.navbar a.icon {
   display: none;
 }
 
@@ -159,6 +159,7 @@ a.nav-logo {
   padding-bottom: 80px;
   line-height: 25px;
   max-width: 1350px;
+  width: 100%;
 }
 
 .statistics h2 {
@@ -200,7 +201,7 @@ a.nav-logo {
   line-height: 15px;
 }
 
-.icon {
+.icon2 {
   position: absolute;
   top: -20px;
   left: 10px;
