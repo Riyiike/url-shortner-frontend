@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/d7e2896800.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile2.css"/> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <title>URL SHORTNER</title>
 </head>
 
@@ -17,34 +18,31 @@
   <header class="page-header">
     <div class="container">
       <nav class="navbar" id= "mynavbar">
-        <ul class="left-nav">
-          <img src="./images/logo.svg" />
-          <li><a href="/index.html">Features</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
-          <li><a href="/Resources.html">Resources</a></li>
-        </ul>
-        <!-- .left-nav -->
-
-        <ul class="right-nav">
-          <li><a href="/login.html">Login</a></li>
-          <li><a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
-        </ul>
-        <!-- .right-nav -->
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div class="left-nav">
+          <a href="/index.html" id ="active"><img src="/images/logo.svg" alt=""></a>
+          <a class="features" href="/index.html">Features</a>
+          <a href="/pricing.html">Pricing</a>
+          <a href="/Resources.html">Resources</a>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
+        <!-- .left-nav -->
+        <div class="right-nav">
+          <a href="/login.html">Login</a></li>
+          <a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
+        </div>
+        <!-- .right-nav -->  
+        
       </nav>
     </div>
     
   </header>
   <!-- .page-header -->
   <main>
-    <div class="main-content">
-      <div class="container">
+    <!-- <div class="container"> -->
+      <div class="main-content">
         <div class="info">
-          <div class ="image">
-            <img src ="images/illustration-working.svg" height =350px width=500px>
-          </div>
           <h1 class="info-heading">More than just<br />shorter links</h1>
           <p class="info-description">
             Build your brands recognition and get detailed <br />
@@ -52,19 +50,28 @@
           </p>
           <button class="btn btn-primary">Get Started</button>
         </div>
-        <!-- Heading and Description-->
-
-        <div class="url-container">
-          <div class="url-overflow">
-            <form action="" class="url-form">
-              <input type="text" class="url-input" name="" placeholder="Shorten a link here..." />
-              <button class="btn-secondary">Shorten it!</button>
-            </form>
-          </div>
+        <div class ="image">
+          <img src ="./images/illustration-working.svg" width=450px>
         </div>
       </div>
-    </div>
+    
+      <!-- Heading and Description-->
   </main>
+
+  <div class="container">
+      <div class="url-container">
+        <div class="url-overflow">
+          <form action="" class="url-form">
+            <input type="text" class="url-input" name="" placeholder="Shorten a link here..." />
+            <small id="err"><em>Please add a link</em></small>
+            <button class="btn-secondary">Shorten it!</button>
+          </form>
+        </div>
+      </div>
+</div>
+
+  
+  <!-- </main> -->
   <!-- url container -->
 
   <!--Advanced statistics-->
@@ -146,44 +153,28 @@
 
   <!--footer-->
 
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-links"> 
-        <div class="shortly-logo">
-          <!-- <img src ="images/logo.svg" > -->
-          <h5>Shortly</h5>
-        </div>
-
-        <div class="left-footer-links">
-          <div class="features-links">
-            <h5 class="footer-link-heading">Features</h5>
-            <ul>
-              <li><a href=>Link Shortening</a></li>
-              <li><a href=>Branded Links</a></li>
-              <li><a href=>Analytics</a></li>
-            </ul>
-          </div>
-
-          <div class="resources-links">
-            <h5 class="footer-link-heading">Resources</h5>
-            <ul>
-              <li><a href=>Blog</a></li>
-              <li><a href=>Developers</a></li>
-              <li><a href=>Support</a></li>
-            </ul>
-          </div>
-
-          <div class="company-links">
-            <h5 class="footer-link-heading">Company</h5>
-            <ul>
-              <li><a href=>About</a></li>
-              <li><a href=>Our Team</a></li>
-              <li><a href=>Careers</a></li>
-              <li><a href=>Contact</a></li>
-
-            </ul>
-          </div>
-
+  <footer>
+    <!-- <div class="container"> -->
+      <img src="/images/logo.svg" alt="">
+      <div class="footer one">
+        <a href="#">Features</a>
+        <a href="#">Link Shortening</a>
+        <a href="#">Branded Links</a>
+        <a href="#">Analytics</a>
+      </div>
+      <div class="footer two">
+        <a href="#">Resources</a>
+        <a href="#">Blog</a>
+        <a href="#">Developers</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer three">
+          <a href="#">Company</a>
+          <a href="#">About</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+      </div>
 
           <div class="social-media-logo">
           
@@ -201,23 +192,10 @@
           </div>
 
         </div>
-
-
-        <!--<li><img src="./images/icon-facebook.svg"><span class="label"></span></li>
-            <li><img src="./images/icon-twitter.svg"></li>
-            <li><img src="./images/icon-instagram.svg"></li>
-            <li><img src="./images/icon-pinterest.svg"></li>-->
-
-
-
-
       </div>
-
     </div>
-
     </div>
-
-    </div>
+    <!-- </div> -->
   </footer>
 </body>
 <script src="/js/url.js"></script>

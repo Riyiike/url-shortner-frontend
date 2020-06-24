@@ -1,0 +1,63 @@
+.navbar.responsive {
+    position: relative;
+}
+/* .navbar.responsive a.icon {
+position: absolute;
+right: 0;
+top: 0;
+background-color: white;
+margin-bottom: 20px;
+color: black;
+} */
+
+.navbar.responsive a {
+float: none;
+flex-direction: column;
+text-align: center;
+background-color: hsl(257, 27%, 26%);
+color: white;
+    }
+    
+
+.navbar {
+/* padding: 20px; */
+}
+
+.navbar.responsive {
+/* position: relative; */
+}
+
+.navbar a {
+/* display: none; */
+}
+
+.navbar #active {
+display: block;
+}
+
+.navbar a.icon {
+float: right;
+display: block;
+}
+
+
+/* .features {
+margin-top: 20px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+} */
+.left-nav .right-nav {
+display: block;
+text-align: center;
+width: 100%;
+background-color: hsl(257, 27%, 26%);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+} 
+
+/* .navbar .right-nav .btn-primary {
+margin-left: 14px;
+margin-right: 14px;
+margin-bottom: 20px;
+background-color: hsl(180, 66%, 49%);
+} */
