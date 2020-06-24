@@ -17,7 +17,7 @@ body {
 /*page container*/
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
 }
 
@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   width:100%;
+  overflow: hidden;
 }
 
 .navbar ul li {
@@ -78,12 +79,16 @@ a.nav-logo {
 /*heading and description*/
 
 .main-content {
-  background: url(/images/illustration-working.svg) no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%; 
+  /* background: url(/images/illustration-working.svg) no-repeat; */
   /*height: 60vh;*/
-  background-position: right 0px;
-  background-size: 350px 250px;
-  position: relative;
-  max-width: 1350px;
+  /* background-position: right 0px; */
+  /* background-size: 350px 250px; */
+  /* position: relative; */
+  /* max-width: 1350px; */
 }
 
 .info {
@@ -108,7 +113,8 @@ a.nav-logo {
 }
 
 .image {
-  display: none;
+  /* display: none; */
+  /* padding-left: 10%; */
 }
 
 /*url container*/
