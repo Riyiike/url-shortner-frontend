@@ -27,14 +27,22 @@ body {
   /* padding: 2rem; */
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   width:100%;
   overflow: hidden;
+} */
+
+.navbar {
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* padding-right: 5%; */
+  /* padding-left: 10%; */
 }
 
-.navbar a {
+/* .navbar a {
   text-decoration: none;
   color: hsl(257, 7%, 63%);
   transition: 0.2s;
@@ -44,6 +52,33 @@ body {
   margin: 2rem;
   font-size: 1.3rem;
   font-weight: bolder;
+} */
+
+.navbar a {
+  float: left;
+  transition: 0.2s;
+  display: block;
+  color: hsl(257, 7%, 63%);
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bolder;  
+}
+
+.right-nav {
+  cursor: pointer;
+  /* padding: 8px 22px; */
+  padding-right: 2%;
+  border: none;
+  /* background-color: hsl(180, 66%, 49%); */
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 500;
+  /* margin-top: 7px; */
+}
+.right-nav{
+  float:right;
 }
 
 .navbar a:hover {
@@ -304,6 +339,7 @@ footer .footer a:hover {
 }
 
 footer .footer a:first-child {
+  /* background-color: white; */
   color: #fff;
   font-weight: 700;
   padding-bottom: 20px;
@@ -319,4 +355,129 @@ footer .social-media-logos a:hover {
 }
 i {
   color: #fff;
+}
+/* URL INPUT STYLING */
+small {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  color: var(--red);
+}
+
+.input input::placeholder{
+  color: var(--grayishViolet);
+  font-size: 18px;
+}
+
+.input input.wrong::placeholder{
+  color: var(--red);
+}
+
+.input input.wrong {
+  border: 3px solid var(--red);
+}
+
+.input button {
+  width: 30%;
+  height: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--cyan);
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.input button, .input input:focus {
+  outline: none;
+}
+
+.input button:hover {
+  background-color: rgb(42, 207, 207, 0.8);
+}
+
+.short-section {
+  width: 100%;
+  position: relative;
+}
+
+.shortLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin: 15px 0;
+  padding: 10px 20px;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  left: -10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  left: -10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.shortLink:hover .delete-btn {
+  opacity: 1;
+}
+
+.shortLink .copy {
+  display: flex;
+}
+
+.shortLink .copy button {
+  cursor: pointer;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--cyan);
+  color: #fff;
+}
+
+.shortLink .copy button:focus {
+  outline: none;
+}
+
+.shortLink .copy input {
+  color: var(--cyan);
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+}
+
+.shortLink .copy input:focus {
+  outline: none;
 }

@@ -61,3 +61,61 @@ margin-right: 14px;
 margin-bottom: 20px;
 background-color: hsl(180, 66%, 49%);
 } */
+
+
+
+
+
+
+
+
+
+
+.navbar.responsive a#active {
+    text-align: left;
+    display: inline;
+    background-color: white;
+    }
+    
+    .navbar a .responsive {
+    float: none;
+    display: block;
+    text-align: center;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+    }
+    
+    .left-nav .right-nav {
+      text-align: center;
+      width: 100%;
+      background-color: hsl(257, 27%, 26%);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    } 
+    
+    .navbar .right-nav .btn-primary {
+      margin-left: 14px;
+      margin-right: 14px;
+      margin-bottom: 20px;
+      background-color: hsl(180, 66%, 49%);
+    }
+    
+    .features {
+      margin-top: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    @media screen and (max-width: 700px){
+      /* .navbar a {display: none;} */
+      .navbar #active {
+        display: block;
+      }
+      .navbar a.icon {
+      float: right;
+      display: block;
+      }
+      
+      .navbar a#active {
+        padding-left: 20px;
+      } 
+    }
