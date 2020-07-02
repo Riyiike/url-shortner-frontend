@@ -38,6 +38,7 @@ body {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
+  
   /* padding-right: 5%; */
   /* padding-left: 10%; */
 }
@@ -63,7 +64,8 @@ body {
   padding: 16px 16px;
   text-decoration: none;
   font-size: 1.3rem;
-  font-weight: bolder;  
+  font-weight: bolder; 
+  margin: 2rem; 
 }
 
 .right-nav {

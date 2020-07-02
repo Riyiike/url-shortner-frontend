@@ -3,35 +3,37 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile.css"/>
-    <link rel="stylesheet" href="./css/pricing.css" />
-    <script src="https://kit.fontawesome.com/d7e2896800.js" crossorigin="anonymous"></script>
-    <title>URL SHORTNER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="./css/pricing.css" />
+  <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile.css"/>
+  <!-- <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile2.css"/> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title>Pricing</title>
 </head>
 
 <body>
     <header class="page-header">
         <div class="container">
           <nav class="navbar" id= "mynavbar">
-            <ul class="left-nav">
-              <img src="./images/logo.svg" />
-              <li><a href="/index.html">Features</a></li>
-              <li><a href="/pricing.html">Pricing</a></li>
-              <li><a href="/Resources.html">Resources</a></li>
-            </ul>
-            <!-- .left-nav -->
-    
-            <ul class="right-nav">
-              <li><a href="/login.html">Login</a></li>
-              <li><a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
-            </ul>
-            <!-- .right-nav -->
-             <a href="javascript:void(0);" class="icon-" onclick="myFunction()">
+            <!-- <div class="left-nav"></div> -->
+              <a href="/index.html" id ="active"><img src="/images/logo.svg" alt=""></a>
+              <a class="features" href="/index.html">Features</a>
+              <a href="/pricing.html">Pricing</a>
+              <a href="/Resources.html">Resources</a>
+            <!-- </div>  -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
+            <!-- .left-nav -->
+            <div class="right-nav">
+              <a href="/login.html">Login</a></li>
+              <a href="/signup.html" class="btn btn-primary">Sign Up</a></li>
+            </div>
+            <!-- .right-nav -->  
+            
           </nav>
         </div>
         
@@ -128,70 +130,58 @@
    <!--Boost your links section-->
 
    <div class="boost-your-link">
-    <div class="container">
-        <h4 class="boost-link-heading">Boost your links today</h4>
-        <button class="boost-link-btn">Get Started</button>
+        <div class="container">
+            <h4 class="boost-link-heading">Boost your links today</h4>
+            <button class="boost-link-btn">Get Started</button>
+        </div>
     </div>
-</div>
 
 <!--footer-->
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-links">
-                <div class="shortly-logo">
-                    <h7>Shortly</h7>
-                </div>
+    <footer>
+        <!-- <div class="container"> -->
+        <img src="/images/logo1.svg " class="footer-logo" alt="">
+        <div class="footer one">
+            <a href="#">Features</a>
+            <a href="#">Link Shortening</a>
+            <a href="#">Branded Links</a>
+            <a href="#">Analytics</a>
+        </div>
+        <div class="footer two">
+            <a href="#">Resources</a>
+            <a href="#">Blog</a>
+            <a href="#">Developers</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer three">
+            <a href="#">Company</a>
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </div>
 
-                <div class="left-footer-links">
-                    <div class="features-links">
-                        <h7 class="footer-link-heading">Features</h7>
-                        <ul>
-                            <li><a href=>Link Shortening</a></li>
-                            <li><a href=>Branded Links</a></li>
-                            <li><a href=>Analytics</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="resources-links">
-                        <h7 class="footer-link-heading">Resources</h7>
-                        <ul>
-                            <li><a href=>Blog</a></li>
-                            <li><a href=>Developers</a></li>
-                            <li><a href=>Support</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="company-links">
-                        <h7 class="footer-link-heading">Company</h7>
-                        <ul>
-                            <li><a href=>About</a></li>
-                            <li><a href=>Our Team</a></li>
-                            <li><a href=>Careers</a></li>
-                            <li><a href=>Contact</a></li>
-
-                        </ul>
-                    </div>
-
-
-                    <div class="social-media-logo">
-                        <a href="http://facebook.com" target="blank"><i class="fab
-                        fa-facebook fa-2x"></i></a>
-                        <a href="http://facebook.com" target="blank"><i class="fab
-                        fa-twitter fa-2x"></i></a>
-                        <a href="http://facebook.com" target="blank"><i class="fab
-                        fa-pinterest fa-2x"></i></a>
-                        <a href="http://facebook.com" target="blank"><i class="fab
-                        fa-instagram fa-2x"></i></a>
-
-                    </div>
-
-                </div>
+            <div class="social-media-logo">
+            
+                <a href="http://facebook.com" target="blank"><i class="fab
+                fa-facebook fa-2x"></i></a>
+            
+                <a href="http://facebook.com" target="blank"><i class="fab
+                fa-twitter fa-2x"></i></a>
+            
+                <a href="http://facebook.com" target="blank"><i class="fab
+                fa-pinterest fa-2x"></i></a>
+                
+                <a href="http://facebook.com" target="blank"><i class="fab
+                fa-instagram fa-2x"></i></a>
+            </div>
 
             </div>
         </div>
-
-    </footer>
+        </div>
+        </div>
+        <!-- </div> -->
+  </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/pricing.js"></script>
     <script src="./js/url.js"></script>
